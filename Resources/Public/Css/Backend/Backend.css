@@ -1,0 +1,30 @@
+.element_title {
+	background:#ededed;
+	padding:10px;
+	width:100%;
+	display: block;
+	border-bottom:1px solid #ccc;
+}
+.element_table {
+	width:100%;
+}
+.element_table tr {
+	border-bottom: 1px solid #ccc;
+}
+.element_table tr th {
+	width:30rem;
+}
+.element_table tr th, .element_table tr td {
+	padding: 5px 10px;
+}
+.element_subtitle {
+	background:#ededed;
+	padding:5px 10px;
+	width:100%;
+	display: block;
+	border-bottom:1px solid #ccc;
+}
+.element_table.one_table tr th:nth-child(3) {
+	padding-left:10px;
+	border-left:none;
+}

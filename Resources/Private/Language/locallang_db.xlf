@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" datatype="plaintext" original="EXT:dv_flexslider/Resources/Private/Language/locallang_db.xlf" date="2022-02-17T09:25:35Z" product-name="dv_flexslider">
+		<header/>
+		<body>
+			<trans-unit id="dv_flexslider.title" resname="dv_flexslider.title">
+				<source>flexslider</source>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.element.description" resname="dv_flexslider.element.description">
+				<source>new contenteoment type flexslider</source>
+			</trans-unit>
+			<trans-unit id="language" resname="language">
+				<source>language</source>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.content.create" resname="dv_flexslider.content.create">
+				<source>content</source>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.tab.settings" resname="dv_flexslider.tab.settings">
+				<source>settings</source>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.tab.settings.main" resname="dv_flexslider.tab.settings.main">
+				<source>main settings</source>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.tab.settings.navigation" resname="dv_flexslider.tab.settings.navigation">
+				<source>navigation</source>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.settings.enabled" resname="dv_flexslider.settings.enabled">
+				<source>enabled</source>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.settings.animation" resname="dv_flexslider.settings.animation">
+				<source>animation</source>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.settings.animationloop" resname="dv_flexslider.settings.animationloop">
+				<source>animationloop</source>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.settings.controlnav" resname="dv_flexslider.settings.controlnav">
+				<source>show controlnav</source>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.settings.randomize" resname="dv_flexslider.settings.randomize">
+				<source>randomize</source>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.settings.pauseonhover" resname="dv_flexslider.settings.pauseonhover">
+				<source>pause on hover</source>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.settings.slideshowspeed" resname="dv_flexslider.settings.slideshowspeed">
+				<source>slideshow speed</source>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.settings.animationspeed" resname="dv_flexslider.settings.animationspeed">
+				<source>animation speed</source>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.settings.directionnav" resname="dv_flexslider.settings.directionnav">
+				<source>show direction nav</source>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.settings.nexttext" resname="dv_flexslider.settings.nexttext">
+				<source>next text</source>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.settings.prevtext" resname="dv_flexslider.settings.prevtext">
+				<source>prev text</source>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.item.create" resname="dv_flexslider.item.create">
+				<source>create item</source>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.item.name" resname="dv_flexslider.item.name">
+				<source>title</source>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.item.image" resname="dv_flexslider.item.image">
+				<source>image</source>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.item.link" resname="dv_flexslider.item.link">
+				<source>link</source>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.item.textcolor" resname="dv_flexslider.item.textcolor">
+				<source>textcolor</source>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.item.backgroundcolor" resname="dv_flexslider.item.backgroundcolor">
+				<source>backgroundcolor</source>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.item.contentposition" resname="dv_flexslider.item.contentposition">
+				<source>contentposition</source>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.item.contentposition.left" resname="dv_flexslider.item.contentposition.left">
+				<source>left</source>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.item.contentposition.right" resname="dv_flexslider.item.contentposition.right">
+				<source>right</source>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.item.crop.desktop" resname="dv_flexslider.item.crop.desktop">
+				<source>image manipulation desktop</source>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.item.crop.mobile" resname="dv_flexslider.item.crop.mobile">
+				<source>image manipulation mobile</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

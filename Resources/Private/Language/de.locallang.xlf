@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" target-language="de" datatype="plaintext" original="EXT:dv_flexslider/Resources/Private/Language/locallang.xlf" date="2022-02-18T11:22:05Z" product-name="dv_flexslider">
+		<header/>
+		<body>
+			<trans-unit id="dv_flexslider.backend.title" resname="dv_flexslider.backend.title">
+				<source>title</source>
+				<target>Titel</target>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.backend.number" resname="dv_flexslider.backend.number">
+				<source>no</source>
+				<target>Nr.</target>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.backend.name" resname="dv_flexslider.backend.name">
+				<source>name</source>
+				<target>Überschrift</target>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.backend.images" resname="dv_flexslider.backend.images">
+				<source>images</source>
+				<target>Bilder</target>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.backend.bodytext" resname="dv_flexslider.backend.bodytext">
+				<source>bodytext</source>
+				<target>Text</target>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.backend.image" resname="dv_flexslider.backend.image">
+				<source>image</source>
+				<target>Bild</target>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.slides.more" resname="dv_flexslider.slides.more">
+				<source>more</source>
+				<target>mehr erfahren</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

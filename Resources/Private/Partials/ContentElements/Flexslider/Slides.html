@@ -1,0 +1,78 @@
+
+<f:for each="{sliderSettings.0.sliderContents}" as="slides" iteration="iterator">
+
+	<f:if condition="{slides.data.textcolor} !=''">
+		
+		<f:asset.css identifier="text--color{slides.data.uid}" priority="header">
+				
+				.text--color--{slides.data.uid} h2,
+				.text--color--{slides.data.uid} p{
+					color: {slides.data.textcolor}!important;
+				}
+				
+ 		</f:asset.css>
+ 		
+ 		
+	</f:if>
+	
+	<f:if condition="{slides.data.backgroundcolor} !=''">
+ 		
+ 				<f:asset.css identifier="background--color{slides.data.uid}" priority="header">
+				
+				.background--color--{slides.data.uid}{
+					background-color: {slides.data.backgroundcolor};
+				}
+				
+ 		</f:asset.css>
+		
+	</f:if>
+	
+	<f:if condition="{slides.images.0}">	
+		
+		<li class="el--{slides.data.uid} sticky--height flexslider--item">
+		
+		   <picture class="flexslider--image">
+<source srcset="{f:uri.image(image: slides.images.0 , cropVariant: 'slider', maxWidth: 1280)}, {f:uri.image(image: slides.images.0, cropVariant: 'slider', maxWidth: 1280)} 2x" media="(min-width: 960px)">
+ <source srcset="{f:uri.image(image: slides.images.0, cropVariant: 'slidermobile', maxWidth: 480)}, {f:uri.image(image: slides.images.0 , cropVariant: 'slidermobile', maxWidth: 480 )} 2x" media="(max-width: 480px)">
+        <!---Fallback--->
+ <img class="img-responsive" src="{f:uri.image(image: slides.images.0, cropVariant: 'slider', maxWidth: 1600 )}" alt="{file.alternative}" longdesc="{file.description}" title="{file.title}">
+    </picture>
+	
+	
+	<f:if condition="{slides.data.name} || {slides.data.bodytext}">
+	
+	     <div class="caption--{slides.data.contentposition} text--color--{slides.data.uid} background--color--{slides.data.uid} ">
+					
+					 <div class="caption--inner">
+						
+						<f:if condition="{slides.data.name} !=''"> 
+							
+                               <h2><f:format.raw>{slides.data.name}</f:format.raw></h2>
+
+                        </f:if>
+			
+							<f:if condition="{slides.data.bodytext} !=''"> 
+                            
+                              <f:format.html>{slides.data.bodytext}</f:format.html>
+											
+								</f:if>
+						
+								
+								<f:if condition="{slides.data.link}"> 
+                                  
+                                  <f:link.typolink parameter="{slides.data.link}" class="slider--link"><f:translate key="LLL:EXT:dv_flexslider/Resources/Private/Language/locallang.xlf:dv_flexslider.slides.more" /></f:link.typolink>
+                               
+                               </f:if>
+						
+						</div>
+								
+				</div>
+			
+	</f:if>
+							
+		</li>
+	
+	</f:if>
+
+
+</f:for>

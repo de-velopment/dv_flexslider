@@ -1,0 +1,42 @@
+{
+    "modules": [],
+    "properties": {
+        "backendModules": [],
+        "description": "Add a new Content Element Type Flexslider",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "typo3 => 10.4.0-10.4.99\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "generateDocumentationTemplate": false,
+            "generateEditorConfig": false,
+            "generateEmptyGitRepository": false,
+            "sourceLanguage": "en",
+            "state": "stable",
+            "targetVersion": "10.4.0-10.4.99",
+            "version": "1.0.0"
+        },
+        "extensionKey": "dv_flexslider",
+        "name": "[Development] Flexslider",
+        "originalExtensionKey": "",
+        "originalVendorName": "",
+        "persons": [
+            {
+                "company": "Development",
+                "email": "google@de-velopment.de",
+                "name": "D.Eckert",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [],
+        "vendorName": "DvFlexslider"
+    },
+    "wires": [],
+    "storagePath": "\/Users\/Dirk\/Sites\/huberhaus\/app\/typo3conf\/ext\/",
+    "log": {
+        "last_modified": "2022-02-16 02:44",
+        "extension_builder_version": "10.0.3",
+        "be_user": " (1)"
+    }
+}

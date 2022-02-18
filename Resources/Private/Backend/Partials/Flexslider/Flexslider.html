@@ -1,0 +1,32 @@
+<p><strong class="element_title">{title}</strong></p>
+
+<p><strong class="element_subtitle"><f:translate key="LLL:EXT:dv_flexslider/Resources/Private/Language/locallang.xlf:dv_flexslider.backend.title" /></strong></p>
+<table class="element_table">
+	<tbody>
+		<tr>
+			<th class="listing"><f:translate key="LLL:EXT:dv_flexslider/Resources/Private/Language/locallang.xlf:dv_flexslider.backend.number" /></th>
+			<th class="content"><f:translate key="LLL:EXT:dv_flexslider/Resources/Private/Language/locallang.xlf:dv_flexslider.backend.name" /></th>
+			<th class="content"><f:translate key="LLL:EXT:dv_flexslider/Resources/Private/Language/locallang.xlf:dv_flexslider.backend.bodytext" /></th>
+		</tr>
+		<f:for each="{headerContent}" as="item" iteration="iterator">
+			<tr>
+				<td class="fitwidth">{iterator.cycle}</td>
+				<td>{item.name}</td>
+				<td><f:format.stripTags>{item.bodytext->f:format.crop(maxCharacters: 20)}</f:format.stripTags></td>
+			</tr>
+		</f:for>
+	</tbody>
+</table>
+<p><strong class="element_subtitle"><f:translate key="LLL:EXT:dv_flexslider/Resources/Private/Language/locallang.xlf:dv_flexslider.backend.images" /></strong></p>
+<table class="element_table">
+	<tbody>
+		<tr>
+			<f:for each="{sliderImages}" as="image">
+				<td><img src="{f:uri.image(image: image.0, maxWidth: '120', cropVariant: 'slider')}" /></td>
+			</f:for>
+		</tr>
+	</tbody>
+</table>
+
+            
+

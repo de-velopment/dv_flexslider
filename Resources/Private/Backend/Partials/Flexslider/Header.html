@@ -1,0 +1,18 @@
+<p><strong class="element_title"><f:translate key="LLL:EXT:dv_flexslider/Resources/Private/Language/locallang.xlf:dv_flexslider.backend.title" /></strong></p>
+<table class="element_table">
+	<tbody>
+		<tr>
+			<th class="content"><f:translate key="LLL:EXT:dv_flexslider/Resources/Private/Language/locallang.xlf:dv_flexslider.backend.name" /></th>
+			<th class="content"><f:translate key="LLL:EXT:dv_flexslider/Resources/Private/Language/locallang.xlf:dv_flexslider.backend.bodytext" />1</th>
+			<th class="content"><f:translate key="LLL:EXT:dv_flexslider/Resources/Private/Language/locallang.xlf:dv_flexslider.backend.images" /></th>
+		</tr>
+		<tr>
+			<td>{headerContent.0.name}</td>
+			<td><f:format.stripTags>{headerContent.0.bodytext->f:format.crop(maxCharacters: 40)}</f:format.stripTags></td>
+			<td><img src="{f:uri.image(image: sliderImages.0.0 , maxWidth: '120', cropVariant: 'slider')}" /></td>
+		</tr>
+	</tbody>
+</table>
+
+            
+

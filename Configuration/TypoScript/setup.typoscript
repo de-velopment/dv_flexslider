@@ -1,0 +1,19 @@
+################
+#### HELPER ####
+################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:dv_flexslider/Configuration/TypoScript/Setup/tt_content.typoscript">
+
+tt_content.dv_flexslider{
+	
+	settings{
+		
+		          height = {$tt_content.dv_flexslider.settings.height}
+	   flexsliderCssPath = {$tt_content.dv_flexslider.settings.flexsliderCssPath}
+        addFlexsliderCss = {$tt_content.dv_flexslider.settings.addFlexsliderCss}
+		flexsliderJsPath = {$tt_content.dv_flexslider.settings.flexsliderJsPath}
+	     addFlexsliderJs = {$tt_content.dv_flexslider.settings.addFlexsliderJs}
+	 addFlexsliderJquery = {$tt_content.dv_flexslider.settings.addFlexsliderJquery}
+		
+	}
+	
+}

@@ -1,0 +1,122 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+	<f:if condition="{sliderSettings}">
+	
+	
+	<f:if condition="{settings.addFlexsliderCss} == 1">
+		
+			<f:then>
+				
+	<f:asset.css identifier="flexsliderMainCss" href="{settings.flexsliderCssPath}" />
+	
+			</f:then>
+			
+		</f:if>
+				
+		
+	
+	
+	<f:asset.css identifier="FlexsliderAdditionalCSS" priority="header">
+	<f:variable name="height" value="{settings.height}"/>
+	
+   .slider-home .flex-viewport,
+   .flexslider .slides > li,
+   ul.slides { height: {height / 1.2}px; 
+   
+   }
+   
+      .slider-home .flex-viewport, .flexslider .slides > li picture { height: {height / 1.2}px ;object-fit: cover;}
+   .slider-home .flex-viewport, .flexslider .slides > li img { height: {height / 1.2}px ;object-fit: cover;}
+   .slider-home .flex-viewport, .flexslider .slides > li .flexslider--image{display:none;}
+  
+   @media (min-width: 480px){ 
+    ul.slides{height: {height / 1.0833333}px;}
+   .slider-home .flex-viewport, .flexslider .slides > li { height: {height / 1.0833333}px ;overflow:hidden;} 
+   .slider-home .flex-viewport, .flexslider .slides > li picture { height: {height / 1.0833333}px ;object-fit: cover;}
+   .slider-home .flex-viewport, .flexslider .slides > li img { height: {height / 1.0833333}px ;object-fit: cover;}
+   .slider-home .flex-viewport, .flexslider .slides > li .flexslider--image{display:none;}
+   }
+   
+   @media (min-width: 960px) { 
+	   ul.slides{height: {settings.height}px ;}
+   .slider-home .flex-viewport, .flexslider .slides > li { height: {settings.height}px ;overflow:hidden;}
+   .slider-home .flex-viewport, .flexslider .slides > li picture { height: {settings.height}px ;object-fit: cover;} 
+   .slider-home .flex-viewport, .flexslider .slides > li img{ height: {settings.height}px ;object-fit: cover;} 
+   .slider-home .flex-viewport, .flexslider .slides > li .flexslider--image{display:none;}
+   }
+   
+   
+</f:asset.css>
+
+<div id="content--block--{data.uid}" class="{f:if(condition: '{data.space_before_class} == "extra-small"', then:'margin--top--5')}{f:if(condition: '{data.space_before_class} == "small"', then:'margin--top--10')}  {f:if(condition: '{data.space_before_class} == "medium"', then:'margin--top--20')} {f:if(condition: '{data.space_before_class} == "large"', then:'margin--top--40')} {f:if(condition: '{data.space_before_class} == "extra-large"', then:'margin--top--60')}{f:if(condition: '{data.space_before_class} == "super-large"', then:'margin--top--80')} {f:if(condition: '{data.space_after_class} == "extra-small"', then:'margin--bottom--5')} {f:if(condition: '{data.space_after_class} == "small"', then:'margin--bottom--10')} {f:if(condition: '{data.space_after_class} == "medium"', then:'margin--bottom--20')}{f:if(condition: '{data.space_after_class} == "large"', then:'margin--bottom--40')}  {f:if(condition: '{data.space_after_class} == "extra-large"', then:'margin--bottom--60')}  {f:if(condition: '{data.space_after_class} == "super-large"', then:'margin--bottom--80')} {f:if(condition: '{data.frame_class} == 0', then:'col-desk-12 col-tab-12 col-mob-4')}  {f:if(condition: '{data.frame_class} == 1', then:'col-desk-11 col-tab-12 col-mob-4')}   {f:if(condition: '{data.frame_class} == 2', then:'col-desk-10 col-tab-12 col-mob-4')}  {f:if(condition: '{data.frame_class} == 3', then:'col-desk-9 col-tab-12 col-mob-4')}   {f:if(condition: '{data.frame_class} == 4', then:'col-desk-8 col-tab-12 col-mob-4')}   {f:if(condition: '{data.frame_class} == 5', then:'col-desk-7 col-tab-12 col-mob-4')}   {f:if(condition: '{data.frame_class} == 6', then:'col-desk-6 col-tab-12 col-mob-4')}   {f:if(condition: '{data.frame_class} == 7', then:'col-desk-5 col-tab-12 col-mob-4')}   {f:if(condition: '{data.frame_class} == 8', then:'col-desk-4 col-tab-6 col-mob-4')}   {f:if(condition: '{data.frame_class} == 9', then:'col-desk-3 col-tab-6 col-mob-2')}   {f:if(condition: '{data.frame_class} == 10', then:'col-desk-2 col-tab-6 col-mob-2')}   {f:if(condition: '{data.frame_class} == 11', then:'col-desk-1 col-tab-6 col-mob-2')}  {f:if(condition: '{data.frame_class} == 12', then:'col-full-width')} {f:if(condition: '{data.dev_flex_item} == 1', then:'flex--parent')} element--{data.CType} {f:if(condition: '{data.layout} == 0', then:'background--white')} {f:if(condition: '{data.layout} == 4', then:'background--turquose--light')} {f:if(condition: '{data.layout} == 5', then:'background--turquose')} {f:if(condition: '{data.layout} == 6', then:'background--blue--black')} {f:if(condition: '{data.layout} == 7', then:'background--gray--light')} "> 
+
+<div class="content--block--inner {f:if(condition: '{data.dev_flex_item} == 1', then:'flex--item')} {f:if(condition: '{data.dev_side_padding_left}', then:'padding--side--left--{data.dev_side_padding_left}')} {f:if(condition: '{data.dev_side_padding_right}', then:'padding--side--right--{data.dev_side_padding_right}')} {f:if(condition: '{data.dev_padding_top}', then:'padding--top--{data.dev_padding_top}')} {f:if(condition: '{data.dev_padding_bottom}', then:'padding--bottom--{data.dev_padding_bottom}')} ">
+	
+	<div class="slider slider-home">
+	<div class="flexslider">
+		<span class="slider--loading"></span>
+					<f:if condition="{sliderSettings.0.sliderContents -> f:count()} > 1">
+						<f:then>
+						<ul class="slides">
+							<f:render partial="Flexslider/Slides" arguments="{_all}"/>
+						</ul>
+						</f:then>
+					</f:if>
+				</div>
+         </div>
+    </div>
+</div>
+
+
+		<f:if condition="{settings.addFlexsliderJquery} == 1">
+		
+			<f:then>
+				
+	<f:asset.script identifier="flexsliderJquery" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.j" />
+	
+			</f:then>
+			
+		</f:if>
+		
+		<f:if condition="{settings.addFlexsliderJs} == 1">
+		
+			<f:then>
+				
+	<f:asset.script identifier="flexsliderMainJs" src="{settings.flexsliderJsPath}" />
+	
+			</f:then>
+			
+		</f:if>
+
+
+			<f:asset.script identifier="flexslider--{sliderSettings.0.data.uid}">
+			(function($){
+						
+						$(window).load(function(){
+						
+							$(".flexslider").flexslider({
+							animation: "<f:format.htmlspecialchars>{sliderSettings.0.data.animation}</f:format.htmlspecialchars>",
+							animationLoop: <f:format.htmlspecialchars>{f:if(condition: '{sliderSettings.0.data.animationloop} == 1', then:'true', else:'false')}</f:format.htmlspecialchars>,
+							randomize: <f:format.htmlspecialchars>{f:if(condition: '{sliderSettings.0.data.randomize} == 1', then:'true', else:'false')}</f:format.htmlspecialchars>,
+							pauseOnHover: <f:format.htmlspecialchars>{f:if(condition: '{sliderSettings.0.data.pauseonhover} == 1', then:'true', else:'false')}</f:format.htmlspecialchars>,
+							slideshowSpeed: <f:format.htmlspecialchars>{sliderSettings.0.data.slideshowspeed}</f:format.htmlspecialchars>,           
+							animationSpeed: <f:format.htmlspecialchars>{sliderSettings.0.data.animationspeed}</f:format.htmlspecialchars>,
+							directionNav: <f:format.htmlspecialchars>{f:if(condition: '{sliderSettings.0.data.directionnav} == 1', then:'true', else:'false')}</f:format.htmlspecialchars>,
+							prevText: "<f:format.htmlspecialchars>{sliderSettings.0.data.prevtext}</f:format.htmlspecialchars>",
+							nextText: "<f:format.htmlspecialchars>{sliderSettings.0.data.nexttext}</f:format.htmlspecialchars>",
+							controlNav: <f:format.htmlspecialchars>{f:if(condition: '{sliderSettings.0.data.controlnav} == 1', then:'true', else:'false')}</f:format.htmlspecialchars>,
+							controlsContainer: $(".custom-controls-container"),
+							start: function() {
+							jQuery(".flexslider--image").show();
+							jQuery(".caption--right").show();
+							jQuery(".caption--left").show();
+							jQuery(".flexslider").find(".slider--loading").hide();
+    						}  
+							});
+							});
+							})(jQuery);
+			
+			</f:asset.script>
+	</f:if>
+</html>
+

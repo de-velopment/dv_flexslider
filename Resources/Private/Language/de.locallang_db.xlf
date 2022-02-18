@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" target-language="de" datatype="plaintext" original="EXT:dv_flexslider/Resources/Private/Language/locallang_db.xlf" date="2022-02-17T09:25:36Z" product-name="dv_flexslider">
+		<header/>
+		<body>
+			<trans-unit id="dv_flexslider.title" resname="dv_flexslider.title">
+				<source>flexslider</source>
+				<target>Flexslider</target>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.element.description" resname="dv_flexslider.element.description">
+				<source>new contenteoment type flexslider</source>
+				<target>Inhaltselement vom Typ Flexslider</target>
+			</trans-unit>
+			<trans-unit id="language" resname="language">
+				<source>language</source>
+				<target>Sprache</target>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.content.create" resname="dv_flexslider.content.create">
+				<source>content</source>
+				<target>Inhalt</target>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.tab.settings" resname="dv_flexslider.tab.settings">
+				<source>settings</source>
+				<target>Einstellungen</target>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.tab.settings.main" resname="dv_flexslider.tab.settings.main">
+				<source>main settings</source>
+				<target>Grundeinstellungen</target>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.tab.settings.navigation" resname="dv_flexslider.tab.settings.navigation">
+				<source>navigation</source>
+				<target>Navigationseinstellungen</target>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.settings.enabled" resname="dv_flexslider.settings.enabled">
+				<source>enabled</source>
+				<target>an</target>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.settings.animation" resname="dv_flexslider.settings.animation">
+				<source>animation</source>
+				<target>Art der Animation</target>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.settings.animationloop" resname="dv_flexslider.settings.animationloop">
+				<source>animationloop</source>
+				<target>Endlosschleife</target>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.settings.controlnav" resname="dv_flexslider.settings.controlnav">
+				<source>show controlnav</source>
+				<target>Kontrolnavigation unter Slider anzeigen</target>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.settings.randomize" resname="dv_flexslider.settings.randomize">
+				<source>randomize</source>
+				<target>Zufällige Anordnung</target>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.settings.pauseonhover" resname="dv_flexslider.settings.pauseonhover">
+				<source>pause on hover</source>
+				<target>Pause bei Mousehover</target>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.settings.slideshowspeed" resname="dv_flexslider.settings.slideshowspeed">
+				<source>slideshow speed</source>
+				<target>Slideshow Geschwindigket</target>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.settings.animationspeed" resname="dv_flexslider.settings.animationspeed">
+				<source>animation speed</source>
+				<target>Animations Geschwindigket</target>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.settings.directionnav" resname="dv_flexslider.settings.directionnav">
+				<source>show direction nav</source>
+				<target>Pfeilnavigation anzeigen</target>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.settings.nexttext" resname="dv_flexslider.settings.nexttext">
+				<source>next text</source>
+				<target>weiter Text</target>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.settings.prevtext" resname="dv_flexslider.settings.prevtext">
+				<source>prev text</source>
+				<target>zurück Text</target>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.item.create" resname="dv_flexslider.item.create">
+				<source>create item</source>
+				<target>Neuen Inhalt erstellen</target>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.item.name" resname="dv_flexslider.item.name">
+				<source>title</source>
+				<target>Titel</target>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.item.image" resname="dv_flexslider.item.image">
+				<source>image</source>
+				<target>Bild</target>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.item.link" resname="dv_flexslider.item.link">
+				<source>link</source>
+				<target>Linkziel</target>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.item.textcolor" resname="dv_flexslider.item.textcolor">
+				<source>textcolor</source>
+				<target>Textfarbe</target>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.item.backgroundcolor" resname="dv_flexslider.item.backgroundcolor">
+				<source>backgroundcolor</source>
+				<target>Hintergrundfarbe</target>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.item.contentposition" resname="dv_flexslider.item.contentposition">
+				<source>contentposition</source>
+				<target>Position der Textbox</target>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.item.contentposition.left" resname="dv_flexslider.item.contentposition.left">
+				<source>left</source>
+				<target>Links</target>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.item.contentposition.right" resname="dv_flexslider.item.contentposition.right">
+				<source>right</source>
+				<target>Rechts</target>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.item.crop.desktop" resname="dv_flexslider.item.crop.desktop">
+				<source>image manipulation desktop</source>
+				<target>Bildgröße Desktop</target>
+			</trans-unit>
+			<trans-unit id="dv_flexslider.item.crop.mobile" resname="dv_flexslider.item.crop.mobile">
+				<source>image manipulation mobile</source>
+				<target>Bildgröße Smartphone</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

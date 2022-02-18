@@ -1,0 +1,26 @@
+tt_content.dv_flexslider{
+
+    settings {
+
+		 # cat=tt_content.dv_flexslider//a; type=string; label=Height in px
+	    height = 
+	    
+	    # cat=tt_content.dv_flexslider/file/060; type=string; label=Path to CSS File (FE)
+		flexsliderCssPath = EXT:dv_flexslider/Resources/Public/Css/flexslider.css
+
+		# cat=tt_content.dv_flexslider//b; type=boolean; label=Add Flexslider CSS file;
+		addFlexsliderCss = 1
+		
+		# cat=tt_content.dv_flexslider/file/080; type=string; label= Flexslider JavaScript file;
+		flexsliderJsPath = EXT:dv_flexslider/Resources/Public/Js/jquery.flexslider-min.js
+		
+		# cat=tt_content.dv_flexslider//c; type=boolean; label=Add Flexslider JavaScript file;
+		addFlexsliderJs = 1
+		
+		# cat=tt_content.dv_flexslider//d; type=boolean; label=Add jQuery
+		addFlexsliderJquery = 1
+		
+		
+		
+    }
+}

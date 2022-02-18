@@ -1,0 +1,16 @@
+
+mod.wizards.newContentElement.wizardItems.ownContentElements{
+   header = LLL:EXT:dv_flexslider/Resources/Private/Language/locallang_db.xlf:dv_flexslider.title
+   after = common
+   elements {
+       dv_flexslider {
+           iconIdentifier = element-dvflexslider
+           title = LLL:EXT:dv_flexslider/Resources/Private/Language/locallang_db.xlf:dv_flexslider.title
+           description =   LLL:EXT:dv_flexslider/Resources/Private/Language/locallang_db.xlf:dv_flexslider.element.description
+           tt_content_defValues {
+               CType = dv_flexslider
+           }
+        }
+    }
+    show := addToList(dv_flexslider)
+}

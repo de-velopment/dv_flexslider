@@ -1,0 +1,10 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	data-namespace-typo3-fluid="true">
+	<f:switch expression="{type}">
+		<f:case value="dv_flexslider">
+		
+			<f:render partial="Flexslider" arguments="{_all}"/>
+		</f:case>
+		<f:defaultCase></f:defaultCase>
+	</f:switch>
+</html>

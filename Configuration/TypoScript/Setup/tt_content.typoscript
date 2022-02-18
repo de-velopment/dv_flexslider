@@ -1,0 +1,46 @@
+tt_content{
+	dv_flexslider < lib.contentElement
+	dv_flexslider{
+			templateRootPaths.10 = EXT:dv_flexslider/Resources/Private/Templates/ContentElements/
+		     partialRootPaths.10 = EXT:dv_flexslider/Resources/Private/Partials/ContentElements/
+		    templateName = Flexslider.html
+		    dataProcessing {
+			330 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+			330 {
+				table = tx_dvflexslider_settings
+				pidInList = root,-1
+				recursive = 9999
+				where = uid=
+				where.dataWrap = |{field:tx_dvflexslider_settings_relation}
+				
+				as = sliderSettings
+				dataProcessing {
+					350 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+					350 {
+						if.isTrue.field = dvflexslider_items_relation
+
+						table = tx_dvflexslider_item
+
+						pidInList = root, -1
+						recursive = 9999
+						where.field = uid
+						where.intval = 1
+						where.dataWrap = tx_dvflexslider_settings = |
+						orderBy = sorting
+
+						as = sliderContents
+						dataProcessing {
+							370 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+							370 {
+								references.fieldName = tx_dvflexslider_item
+								as = images
+							}
+						}
+					}
+				}
+			}
+		}
+	
+	}
+	
+}
