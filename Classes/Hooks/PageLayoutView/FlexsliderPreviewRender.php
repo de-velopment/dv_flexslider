@@ -23,7 +23,7 @@ class FlexsliderPreviewRender implements PageLayoutViewDrawItemHookInterface
 		
 		if ($row['CType'] === 'dv_flexslider')
 		{
-			$drawItem = false;
+			
 			
 			$objectManager = GeneralUtility::makeInstance(ObjectManager::class);
 			$standaloneView = $objectManager->get(StandaloneView::class);
@@ -63,8 +63,11 @@ class FlexsliderPreviewRender implements PageLayoutViewDrawItemHookInterface
 				$fileObjects[] = $fileRepository->findByRelation('tx_dvflexslider_item', 'image', $content[$i]['uid']);
 			}
 			
+			
 				$countItems = count($content);
-				
+				if($countItems > 0){
+				$drawItem = false;
+					
 				$standaloneView->assignMultiple([
 				'items' => $countItems,
 				'title' => $parentObject->CType_labels[$row['CType']],
@@ -75,6 +78,10 @@ class FlexsliderPreviewRender implements PageLayoutViewDrawItemHookInterface
 			]);
 
 			$itemContent .= $standaloneView->render();
+			
+			}else{
+				$drawItem = true;
+			}
 			
 			
 			}

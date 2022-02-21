@@ -30,7 +30,7 @@ $GLOBALS['TCA']['tt_content']['types']['dv_flexslider'] = [
   --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xml:palette.frames;frames,
   --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xml:tabs.access,
   --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xml:palette.visibility;visibility,
-  --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xml:palette.access;access,
+  --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xml:palette.access;access,hidden,
   --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xml:tabs.extended',
  ];
 $originalSliderContent = $GLOBALS['TCA']['tt_content'];
